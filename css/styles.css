@@ -1,0 +1,52 @@
+body {
+  font-family: "Roboto", sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #1a1a1a;
+  color: #ccc;
+  min-height: 100vh;
+  position: relative;
+}
+
+.container {
+  width: 80%;
+  margin: 0 auto;
+}
+
+header {
+  background-color: #333;
+  color: #fff;
+  text-align: center;
+  padding: 50px 0;
+}
+
+header h1 {
+  margin: 0;
+  font-size: 3em;
+  color: #3498db;
+}
+
+header p {
+  font-size: 1.2em;
+  color: #bbb;
+}
+
+section {
+  padding: 60px 0;
+  text-align: center;
+}
+
+.section h2 {
+  color: #3498db;
+  font-size: 2.5em;
+  margin-bottom: 20px;
+}
+
+.section p {
+  font-size: 1.1em;
+  color: #bbb;
+}
+
+.picture-img {
+  width: 10%;
+}
