@@ -1,3 +1,4 @@
+/* General styling for the entire page */
 body {
   font-family: "Roboto", sans-serif;
   margin: 0;
@@ -8,11 +9,13 @@ body {
   position: relative;
 }
 
+/* Container styling for centralizing content */
 .container {
   width: 80%;
   margin: 0 auto;
 }
 
+/* Header styling */
 header {
   background-color: #333;
   color: #fff;
@@ -20,6 +23,7 @@ header {
   padding: 50px 0;
 }
 
+/* Header text styling */
 header h1 {
   margin: 0;
   font-size: 3em;
@@ -31,22 +35,26 @@ header p {
   color: #bbb;
 }
 
+/* Generic styling for sections */
 section {
   padding: 60px 0;
   text-align: center;
 }
 
+/* Section heading styling */
 .section h2 {
   color: #3498db;
   font-size: 2.5em;
   margin-bottom: 20px;
 }
 
+/* Section paragraph styling */
 .section p {
   font-size: 1.1em;
   color: #bbb;
 }
 
+/* Styling for individual projects */
 .project {
   margin-bottom: 40px;
   background-color: #333;
@@ -61,12 +69,14 @@ section {
   transform: scale(1.05);
 }
 
+/* Project image styling */
 .project img {
   width: 100%;
   height: auto;
   border-bottom: 1px solid #444;
 }
 
+/* Project heading styling */
 .project h3 {
   margin: 15px 0;
   font-size: 2em;
@@ -75,22 +85,26 @@ section {
   padding-left: 10px;
 }
 
+/* Project description styling */
 .project p {
   padding: 20px;
   font-size: 1.1em;
   color: #bbb;
 }
 
+/* Project icon styling */
 .project-icon {
   font-size: 2.5em;
   color: #fff;
 }
 
+/* Project image size and alignment */
 .project-imgs {
   max-width: 10%;
   float: left;
 }
 
+/* Styling for the profile picture in the header */
 .picture-img {
   width: 10%;
 }
