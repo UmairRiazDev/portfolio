@@ -1,22 +1,15 @@
 <!DOCTYPE html>
-<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
-<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
-<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
-<!--[if gt IE 8]>      <html class="no-js"> <!--<![endif]-->
 <html lang="en">
   <head>
-    <!-- Meta tags for character set, viewport, and robots meta directives -->
     <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta
-      name="ROBOTS"
-      content="NOINDEX, NOFOLLOW, NOARCHIVE, NOSNIPPET, NOODP, noimageindex"
-    />
-
-    <!-- Favicon link -->
+    <meta name="ROBOTS" content="NOINDEX" />
+    <meta name="ROBOTS" content="NOFOLLOW" />
+    <meta name="ROBOTS" content="NOARCHIVE" />
+    <meta name="ROBOTS" content="NOSNIPPET" />
+    <meta name="ROBOTS" content="NOODP" />
+    <meta name="ROBOTS" content="noimageindex" />
     <link rel="icon" href="favicon.ico" />
-
-    <!-- External stylesheet and font-awesome CSS link -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="css/styles.css" />
     <link
       rel="stylesheet"
@@ -24,108 +17,130 @@
       integrity="sha384-eGImld5P3u9bRbMzRlDFO6sQI7L/05F7d5m2Uv1z5NkAvLrj/yD3e73z9a9X8dWQ"
       crossorigin="anonymous"
     />
-
-    <!-- Title for the webpage -->
     <title>Umair Riaz | Web Developer | Work | Freelancer</title>
   </head>
   <body>
-    <!--[if lt IE 7]>
-      <p class="browsehappy">
-        You are using an <strong>outdated</strong> browser. Please
-        <a href="#">upgrade your browser</a> to improve your experience.
-      </p>
-    <![endif]-->
-
-    <!-- Header section -->
     <header>
-      <div class="container">
-        <!-- Profile picture and introduction -->
-        <img src="images/picture.png" class="picture-img" />
-        <h1>I'm Umair</h1>
-        <p>Web Developer</p>
-      </div>
+      <nav>
+        <a href="#home">Home</a>
+        <a href="#about">About</a>
+        <a href="#projects">Projects</a>
+        <a href="#contact">Contact</a>
+      </nav>
     </header>
 
-    <!-- About Me section -->
-    <section id="about" class="section">
+    <section id="home">
+      <div class="container">
+        <h1 style="margin-bottom: 10px">I'm Umair</h1>
+        <p class="lead">Web Developer</p>
+      </div>
+    </section>
+
+    <section id="about" class="about-me">
       <div class="container">
         <h2>About Me</h2>
-        <!-- Brief introduction about the web developer -->
-        <p>
-          Hello, I'm Umair, a passionate web developer with a keen interest in
-          creating delightful and functional websites. I have a strong
-          foundation in HTML, CSS, and JavaScript, and I am constantly learning
-          and exploring new technologies to enhance my skills.
-        </p>
+        <div class="about-me-content">
+          <img src="images/picture.png" alt="Umair" class="picture-img" />
+          <p>
+            Hello, I'm Umair, a passionate web developer with a keen interest in
+            creating delightful and functional websites. I have a strong
+            foundation in HTML, CSS, and JavaScript, and I am constantly
+            learning and exploring new technologies to enhance my skills.
+          </p>
+          <div class="skills">
+            <div class="skill">HTML5</div>
+            <div class="skill">CSS3</div>
+            <div class="skill">JavaScript</div>
+            <div class="skill">React</div>
+            <div class="skill">Node.js</div>
+          </div>
+        </div>
       </div>
     </section>
 
-    <!-- Projects section -->
-    <section id="projects" class="section">
+    <section id="projects" class="projects">
       <div class="container">
         <h2>Projects</h2>
-        <!-- Individual project entries -->
-        <div class="project">
-          <div class="project-icon">
-            <!-- Project icon using Font Awesome -->
-            <i class="fas fa-laptop-code"></i>
-          </div>
-          <!-- Project image, title, and description -->
-          <img src="images/coding.png" class="project-imgs" alt="Project 1" />
+        <div
+          class="project"
+          onclick="openProjectModal('Project 1', 'Description of Project 1.')"
+        >
+          <img
+            src="images/coding.png"
+            class="project-imgs skill"
+            alt="Project 1"
+          />
           <h3>Project 1</h3>
-          <p>Details for the project will be added soon.</p>
+          <p>Description of Project 1.</p>
         </div>
-        <div class="project">
-          <div class="project-icon">
-            <!-- Project icon using Font Awesome -->
-            <i class="fas fa-mobile-alt"></i>
-          </div>
-          <!-- Project image, title, and description -->
-          <img src="images/computer.png" class="project-imgs" alt="Project 2" />
+        <div
+          class="project"
+          onclick="openProjectModal('Project 2', 'Description of Project 2.')"
+        >
+          <img
+            src="images/computer.png"
+            class="project-imgs skill"
+            alt="Project 2"
+          />
           <h3>Project 2</h3>
-          <p>Details for the project will be added soon.</p>
+          <p>Description of Project 2.</p>
         </div>
-        <div class="project">
-          <div class="project-icon">
-            <!-- Project icon using Font Awesome -->
-            <i class="fas fa-mobile-alt"></i>
-          </div>
-          <!-- Project image, title, and description -->
-          <img src="images/computer.png" class="project-imgs" alt="Project 3" />
+        <div
+          class="project"
+          onclick="openProjectModal('Project 3', 'Description of Project 3.')"
+        >
+          <img
+            src="images/computer.png"
+            class="project-imgs skill"
+            alt="Project 3"
+          />
           <h3>Project 3</h3>
-          <p>Details for the project will be added soon.</p>
+          <p>Description of Project 3.</p>
         </div>
       </div>
     </section>
 
-    <!-- Contact section -->
-    <section id="contact" class="section">
+    <section id="contact" class="contact">
       <div class="container">
         <h2>Contact</h2>
-        <!-- Contact information -->
         <p>Email: contact@umairriaz.com</p>
         <p>
           LinkedIn:
-          <a href="https://www.linkedin.com/" target="_blank">linkedin</a>
+          <a href="https://www.linkedin.com" target="_blank"
+            >LinkedIn Profile</a
+          >
         </p>
         <p>
-          Github:
-          <a href="https://www.github.com/umairriazdev" target="_blank"
-            >Github</a
+          GitHub:
+          <a href="https://github.com/umairreazdev" target="_blank"
+            >GitHub Profile</a
           >
         </p>
       </div>
     </section>
 
-    <!-- Footer section -->
-    <footer>
-      <div class="container">
-        <!-- Copyright notice -->
-        <p>&copy; 2024 Umair. All rights reserved.</p>
+    <div class="project-modal" id="projectModal" onclick="closeProjectModal()">
+      <div class="modal-content">
+        <span class="modal-close" onclick="closeProjectModal()">&times;</span>
+        <h2 id="projectTitle"></h2>
+        <p id="projectDescription"></p>
       </div>
+    </div>
+
+    <footer>
+      <p>&copy; 2023 Umair. All rights reserved.</p>
     </footer>
 
-    <!-- Placeholder for script -->
-    <script src="" async defer></script>
+    <script>
+      function openProjectModal(title, description) {
+        document.getElementById("projectTitle").innerText = title;
+        document.getElementById("projectDescription").innerText = description;
+        document.getElementById("projectModal").style.display = "flex";
+      }
+
+      function closeProjectModal() {
+        document.getElementById("projectModal").style.display = "none";
+      }
+    </script>
   </body>
 </html>
