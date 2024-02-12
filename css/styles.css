@@ -1,118 +1,132 @@
+/* CSS code for styling Umair Riaz's portfolio website */
+
+/* Global styles */
 * {
-  box-sizing: border-box;
-  margin: 0;
-  padding: 0;
+  box-sizing: border-box; /* Applies border-box sizing model to all elements */
+  margin: 0; /* Removes default margin */
+  padding: 0; /* Removes default padding */
 }
 
 body {
-  font-family: "Arial", sans-serif;
-  background-color: #f8f9fa;
-  color: #343a40;
-  line-height: 1.6;
-  scroll-behavior: smooth;
+  /* Body styles */
+  font-family: "Arial", sans-serif; /* Sets the font family */
+  background-color: #f8f9fa; /* Sets the background color */
+  color: #343a40; /* Sets the text color */
+  line-height: 1.6; /* Sets the line height */
+  scroll-behavior: smooth; /* Enables smooth scrolling */
 }
 
+/* Header styles */
 header {
-  background-color: #343a40;
-  color: white;
-  text-align: center;
-  padding: 1em 0;
-  width: 100%;
-  z-index: 1000;
+  background-color: #343a40; /* Sets the background color */
+  color: white; /* Sets the text color */
+  text-align: center; /* Aligns text to the center */
+  padding: 1em 0; /* Sets padding */
+  width: 100%; /* Sets the width */
+  z-index: 1000; /* Sets the stack order */
 }
 
+/* Navigation styles */
 nav {
-  display: flex;
-  justify-content: center;
-  align-items: center;
+  display: flex; /* Displays navigation links in a row */
+  justify-content: center; /* Aligns navigation links to the center */
+  align-items: center; /* Centers navigation vertically */
 }
 
 nav a {
-  color: white;
-  text-decoration: none;
-  padding: 1em;
-  margin: 0 15px;
-  font-size: 1.2em;
-  transition: color 0.3s ease;
+  /* Navigation link styles */
+  color: white; /* Sets the text color */
+  text-decoration: none; /* Removes underline */
+  padding: 1em; /* Sets padding */
+  margin: 0 15px; /* Sets margin */
+  font-size: 1.2em; /* Sets font size */
+  transition: color 0.3s ease; /* Adds transition effect */
 }
 
 nav a:hover {
-  color: #ffc107;
+  /* Navigation link hover styles */
+  color: #ffc107; /* Changes text color on hover */
 }
 
+/* Container styles */
 .container {
-  width: 80%;
-  margin: 0 auto;
-  max-width: 1200px;
-  text-align: center;
+  width: 80%; /* Sets the width */
+  margin: 0 auto; /* Centers the container horizontally */
+  max-width: 1200px; /* Sets the maximum width */
+  text-align: center; /* Aligns text to the center */
 }
 
+/* Section styles */
 .section {
-  padding: 80px 20px;
+  padding: 80px 20px; /* Sets padding */
 }
 
-h1,
-h2,
-h3 {
-  color: #343a40;
-  margin-bottom: 20px;
+/* Heading styles */
+h1, h2, h3 {
+  color: #343a40; /* Sets the text color */
+  margin-bottom: 20px; /* Sets bottom margin */
 }
 
+/* About Me section styles */
 .about-me img {
-  max-width: 250px;
-  height: auto;
-  border-radius: 8px;
-  margin-bottom: 20px;
+  max-width: 250px; /* Sets the maximum width */
+  height: auto; /* Automatically adjusts height */
+  border-radius: 8px; /* Adds border radius */
+  margin-bottom: 20px; /* Sets bottom margin */
 }
 
+/* Skills styles */
 .skills {
-  display: flex;
-  justify-content: space-between;
-  margin-top: 10px;
+  display: flex; /* Displays skills in a row */
+  justify-content: space-between; /* Distributes space evenly between skills */
+  margin-top: 10px; /* Sets top margin */
 }
 
 .skill {
-  flex: 1;
-  text-align: center;
-  padding: 10px;
-  background-color: #e6e6e6;
-  border-radius: 8px;
-  margin-right: 10px;
+  flex: 1; /* Sets equal width for skills */
+  text-align: center; /* Aligns text to the center */
+  padding: 10px; /* Sets padding */
+  background-color: #e6e6e6; /* Sets background color */
+  border-radius: 8px; /* Adds border radius */
+  margin-right: 10px; /* Sets right margin */
 }
 
+/* Projects section styles */
 .projects-grid {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-  gap: 20px;
+  display: grid; /* Displays projects in a grid layout */
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); /* Sets grid columns */
+  gap: 20px; /* Sets gap between grid items */
 }
 
 .project {
-  padding: 20px;
-  background-color: white;
-  border-radius: 8px;
-  box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
-  transition: transform 0.3s ease;
-  cursor: pointer;
+  padding: 20px; /* Sets padding */
+  background-color: white; /* Sets background color */
+  border-radius: 8px; /* Adds border radius */
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.1); /* Adds box shadow */
+  transition: transform 0.3s ease; /* Adds transition effect */
+  cursor: pointer; /* Changes cursor on hover */
 }
 
 .project:hover {
-  transform: translateY(-5px);
+  transform: translateY(-5px); /* Applies transformation on hover */
 }
 
 .project-imgs {
-  max-width: 100%;
-  height: auto;
-  border-radius: 8px;
-  margin-bottom: 10px;
+  max-width: 100%; /* Sets the maximum width */
+  height: auto; /* Automatically adjusts height */
+  border-radius: 8px; /* Adds border radius */
+  margin-bottom: 10px; /* Sets bottom margin */
 }
 
+/* Contact section styles */
 .contact {
-  text-align: center;
+  text-align: center; /* Aligns text to the center */
 }
 
+/* Footer styles */
 footer {
-  text-align: center;
-  padding: 2em 0;
-  background-color: #343a40;
-  color: white;
+  text-align: center; /* Aligns text to the center */
+  padding: 2em 0; /* Sets padding */
+  background-color: #343a40; /* Sets background color */
+  color: white; /* Sets text color */
 }
