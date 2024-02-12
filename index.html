@@ -2,14 +2,8 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
-    <meta name="ROBOTS" content="NOINDEX" />
-    <meta name="ROBOTS" content="NOFOLLOW" />
-    <meta name="ROBOTS" content="NOARCHIVE" />
-    <meta name="ROBOTS" content="NOSNIPPET" />
-    <meta name="ROBOTS" content="NOODP" />
-    <meta name="ROBOTS" content="noimageindex" />
-    <link rel="icon" href="favicon.ico" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="icon" href="favicon.ico" />
     <link rel="stylesheet" href="css/styles.css" />
     <link
       rel="stylesheet"
@@ -31,76 +25,67 @@
 
     <section id="home">
       <div class="container">
-        <h1 style="margin-bottom: 10px">I'm Umair</h1>
+        <h1>I'm Umair</h1>
         <p class="lead">Web Developer</p>
       </div>
     </section>
 
-    <section id="about" class="about-me">
+    <section id="about" class="section about-me">
       <div class="container">
         <h2>About Me</h2>
-        <div class="about-me-content">
-          <img src="images/picture.png" alt="Umair" class="picture-img" />
-          <p>
-            Hello, I'm Umair, a passionate web developer with a keen interest in
-            creating delightful and functional websites. I have a strong
-            foundation in HTML, CSS, and JavaScript, and I am constantly
-            learning and exploring new technologies to enhance my skills.
-          </p>
-          <div class="skills">
-            <div class="skill">HTML5</div>
-            <div class="skill">CSS3</div>
-            <div class="skill">JavaScript</div>
-            <div class="skill">React</div>
-            <div class="skill">Node.js</div>
+        <img src="images/picture.png" alt="pic" class="picture-img" />
+        <p>
+          Hello, I'm Umair, a passionate web developer with a keen interest in
+          creating delightful and functional websites. I have a strong
+          foundation in HTML, CSS, and JavaScript, and I am constantly learning
+          and exploring new technologies to enhance my skills.
+        </p>
+        <div class="skills">
+          <div class="skill">HTML5</div>
+          <div class="skill">CSS3</div>
+          <div class="skill">JavaScript</div>
+          <div class="skill">React</div>
+          <div class="skill">Node.js</div>
+        </div>
+      </div>
+    </section>
+
+    <section id="projects" class="section projects">
+      <div class="container">
+        <h2>Projects</h2>
+        <div class="projects-grid">
+          <div class="project">
+            <img
+              src="images/coding.png"
+              class="project-imgs skill"
+              alt="Project 1"
+            />
+            <h3>Project 1</h3>
+            <p>Description of Project 1.</p>
+          </div>
+          <div class="project">
+            <img
+              src="images/computer.png"
+              class="project-imgs skill"
+              alt="Project 2"
+            />
+            <h3>Project 2</h3>
+            <p>Description of Project 2.</p>
+          </div>
+          <div class="project">
+            <img
+              src="images/computer.png"
+              class="project-imgs skill"
+              alt="Project 3"
+            />
+            <h3>Project 3</h3>
+            <p>Description of Project 3.</p>
           </div>
         </div>
       </div>
     </section>
 
-    <section id="projects" class="projects">
-      <div class="container">
-        <h2>Projects</h2>
-        <div
-          class="project"
-          onclick="openProjectModal('Project 1', 'Description of Project 1.')"
-        >
-          <img
-            src="images/coding.png"
-            class="project-imgs skill"
-            alt="Project 1"
-          />
-          <h3>Project 1</h3>
-          <p>Description of Project 1.</p>
-        </div>
-        <div
-          class="project"
-          onclick="openProjectModal('Project 2', 'Description of Project 2.')"
-        >
-          <img
-            src="images/computer.png"
-            class="project-imgs skill"
-            alt="Project 2"
-          />
-          <h3>Project 2</h3>
-          <p>Description of Project 2.</p>
-        </div>
-        <div
-          class="project"
-          onclick="openProjectModal('Project 3', 'Description of Project 3.')"
-        >
-          <img
-            src="images/computer.png"
-            class="project-imgs skill"
-            alt="Project 3"
-          />
-          <h3>Project 3</h3>
-          <p>Description of Project 3.</p>
-        </div>
-      </div>
-    </section>
-
-    <section id="contact" class="contact">
+    <section id="contact" class="section contact">
       <div class="container">
         <h2>Contact</h2>
         <p>Email: contact@umairriaz.com</p>
@@ -119,28 +104,8 @@
       </div>
     </section>
 
-    <div class="project-modal" id="projectModal" onclick="closeProjectModal()">
-      <div class="modal-content">
-        <span class="modal-close" onclick="closeProjectModal()">&times;</span>
-        <h2 id="projectTitle"></h2>
-        <p id="projectDescription"></p>
-      </div>
-    </div>
-
     <footer>
       <p>&copy; 2023 Umair. All rights reserved.</p>
     </footer>
-
-    <script>
-      function openProjectModal(title, description) {
-        document.getElementById("projectTitle").innerText = title;
-        document.getElementById("projectDescription").innerText = description;
-        document.getElementById("projectModal").style.display = "flex";
-      }
-
-      function closeProjectModal() {
-        document.getElementById("projectModal").style.display = "none";
-      }
-    </script>
   </body>
 </html>
