@@ -49,7 +49,7 @@ nav a {
 
 nav a:hover {
   /* Navigation link hover styles */
-  color: #ffc107; /* Changes text color on hover */
+  color: #ff0751; /* Changes text color on hover */
 }
 
 /* Container styles */
@@ -90,6 +90,8 @@ h3 {
   display: flex; /* Displays skills in a row */
   justify-content: space-between; /* Distributes space evenly between skills */
   margin-top: 10px; /* Sets top margin */
+  flex-wrap: wrap;
+  gap: 10px;
 }
 
 .skill {
@@ -133,7 +135,6 @@ h3 {
 
 .shopping-cart {
   box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.1);
-  /* border-radius: 8px; */
 }
 
 /* Contact section styles */
@@ -149,9 +150,6 @@ h3 {
   background: #fff;
   box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
   border-radius: 12px;
-}
-
-.contact-links {
 }
 
 .contact-links h2 {
@@ -229,4 +227,14 @@ footer {
   padding: 2em 0; /* Sets padding */
   background-color: #343a40; /* Sets background color */
   color: white; /* Sets text color */
+}
+
+/* Media query for screens below 1100px */
+@media (max-width: 1100px) {
+  .contact {
+    width: 90%;
+    padding: 20px;
+    flex-direction: column;
+    gap: 30px;
+  }
 }
