@@ -73,6 +73,10 @@ h3 {
   margin-bottom: 20px; /* Sets bottom margin */
 }
 
+#home {
+  margin-top: 50px;
+}
+
 /* About Me section styles */
 .about-me img {
   max-width: 250px; /* Sets the maximum width */
