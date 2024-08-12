@@ -139,8 +139,9 @@ h3 {
 /* Contact section styles */
 .contact {
   display: flex;
+  flex-direction: row;
   align-items: center;
-  text-align: center; /* Aligns text to the center */
+  /* flex-wrap: wrap; */
   color: #343a40;
   width: 60%;
   margin: 50px auto 80px;
@@ -151,6 +152,27 @@ h3 {
 }
 
 .contact-links {
+}
+
+.contact-links h2 {
+  font-size: 1.8rem;
+}
+
+.contact-links p {
+  font-size: 1.1rem;
+  margin-bottom: 15px;
+  color: #495057;
+}
+
+.contact-links a {
+  color: #007bffb4;
+  text-decoration: none;
+  font-weight: bold;
+  transition: color 0.3s ease;
+}
+
+.contact-links a:hover {
+  color: #007bff;
 }
 
 .contact-form h2 {
