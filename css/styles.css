@@ -50,8 +50,8 @@ nav a {
 }
 
 nav a:hover {
-  /* Navigation link hover styles */
-  color: #ff0751; /* Changes text color on hover */
+  /* color: #ff0751; */
+  color: #007bff;
 }
 
 /* Container styles */
@@ -64,7 +64,7 @@ nav a:hover {
 
 /* Section styles */
 .section {
-  padding: 80px 20px; /* Sets padding */
+  padding: 80px 20px 0 20px;
 }
 
 /* Heading styles */
@@ -75,8 +75,40 @@ h3 {
   margin-bottom: 20px; /* Sets bottom margin */
 }
 
+/* Home section styling */
 #home {
-  margin-top: 50px;
+  background-color: #343a40;
+  color: #f8f9fa;
+  text-align: center;
+  padding: 40px 20px;
+}
+
+/* Heading styling */
+h1 {
+  font-size: 3em;
+  color: #e9ecef;
+  margin-bottom: 10px;
+}
+
+/* Subheading styling */
+.lead {
+  font-size: 1.25em;
+  color: #adb5bd;
+  margin-top: 0;
+}
+
+/* Mobile responsiveness */
+@media (max-width: 768px) {
+  #home {
+    padding: 12px 10px;
+  }
+  h1 {
+    font-size: 2em; /* Smaller heading on mobile */
+  }
+
+  .lead {
+    font-size: 1em; /* Smaller subheading on mobile */
+  }
 }
 
 /* About Me section styles */
@@ -88,25 +120,6 @@ h3 {
 }
 
 /* Skills section styles */
-/*
-.skills {
-  display: flex;
-  justify-content: space-between;
-  margin-top: 10px;
-  flex-wrap: wrap;
-  gap: 10px;
-}
-
- .skill {
-  flex: 1;
-  text-align: center;
-  padding: 10px;
-  background-color: #e6e6e6;
-  border-radius: 8px;
-  margin-right: 10px;
-}
-*/
-
 .skills {
   display: flex;
   justify-content: space-between;
@@ -172,6 +185,10 @@ h3 {
   pointer-events: none; /* Ensures text doesn’t block other interactions */
 }
 
+.projects {
+  margin-bottom: 100px;
+}
+
 /* Projects section styles */
 .projects-grid {
   display: grid; /* Displays projects in a grid layout */
@@ -183,16 +200,36 @@ h3 {
 }
 
 .project {
-  padding: 20px; /* Sets padding */
-  background-color: white; /* Sets background color */
-  border-radius: 8px; /* Adds border radius */
-  box-shadow: 0 0 20px rgba(0, 0, 0, 0.1); /* Adds box shadow */
-  transition: transform 0.3s ease; /* Adds transition effect */
-  cursor: pointer; /* Changes cursor on hover */
+  padding: 20px;
+  background-color: white;
+  border-radius: 8px;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease, box-shadow 0.3s ease, color 0.3s ease;
+  cursor: pointer;
 }
 
 .project:hover {
   transform: translateY(-5px); /* Applies transformation on hover */
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2);
+}
+
+.project a {
+  text-decoration: none;
+  color: inherit;
+}
+
+.project a:visited {
+  color: inherit;
+}
+
+.project h3,
+.project p {
+  transition: color 0.3s ease;
+}
+
+.project:hover h3,
+.project:hover p {
+  color: #007bff;
 }
 
 .project-imgs {
@@ -202,23 +239,28 @@ h3 {
   margin-bottom: 10px; /* Sets bottom margin */
 }
 
-.shopping-cart {
-  box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.1);
-}
-
 /* Contact section styles */
 .contact {
   display: flex;
   flex-direction: row;
   align-items: center;
-  /* flex-wrap: wrap; */
   color: #343a40;
   width: 60%;
-  margin: 50px auto 80px;
+  margin: 80px auto 80px;
   padding: 30px;
   background: #fff;
   box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
   border-radius: 12px;
+}
+
+/* Media query for screens below 1100px */
+@media (max-width: 1100px) {
+  .contact {
+    width: 90%;
+    padding: 20px;
+    flex-direction: column;
+    gap: 30px;
+  }
 }
 
 .contact-links h2 {
@@ -296,14 +338,4 @@ footer {
   padding: 2em 0; /* Sets padding */
   background-color: #343a40; /* Sets background color */
   color: white; /* Sets text color */
-}
-
-/* Media query for screens below 1100px */
-@media (max-width: 1100px) {
-  .contact {
-    width: 90%;
-    padding: 20px;
-    flex-direction: column;
-    gap: 30px;
-  }
 }
