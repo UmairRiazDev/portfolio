@@ -40,31 +40,6 @@
         </div>
       </section>
 
-      <!-- <section id="about" class="section about-me">
-        <div class="container">
-          <h2>About Me</h2>
-          <img src="images/picture.png" alt="Umair Riaz" class="picture-img" />
-          <p>
-            Hello, I'm Umair, a passionate web developer with a keen interest in
-            creating delightful and functional websites. I have a strong
-            foundation in HTML and CSS, and I am continuously learning and
-            exploring new technologies to further enhance my skills.<br /><br />
-            You will soon see the strike-through line removed from the following
-            technologies.
-          </p>
-          <div class="skills">
-            <div class="skill html">HTML5</div>
-            <div class="skill css">CSS3</div>
-            <div class="skill js">JavaScript</div>
-            <div class="skill react">React/Angular</div>
-            <div class="skill node">Node.js</div>
-            <div class="skill database">Database</div>
-            <div class="skill server">Web Server</div>
-            <div class="skill cms">CMS</div>
-          </div>
-        </div>
-      </section> -->
-
       <section id="about" class="section about-me">
         <div class="container">
           <h2>About Me</h2>
@@ -133,7 +108,7 @@
 
       <section id="projects" class="section projects">
         <div class="container">
-          <h2>Projects</h2>
+          <h2 id="projects-heading">Projects</h2>
           <div class="projects-grid">
             <div class="project">
               <a href="https://cyf-shopping-cart.netlify.app/" target="_blank">
@@ -148,7 +123,20 @@
                 </p></a
               >
             </div>
-            <div class="project">
+
+            <section id="coming-soon">
+              <h2>Stay Updated on Upcoming Projects</h2>
+              <p>
+                Sign up to be the first to know when my new projects are
+                released.
+              </p>
+              <form id="signup-form">
+                <input type="email" placeholder="Enter your email" required />
+                <button type="submit">Sign Up</button>
+              </form>
+            </section>
+
+            <!-- <div class="project coming-soon">
               <img
                 src="images/coding.png"
                 class="project-imgs skill"
@@ -157,7 +145,7 @@
               <h3>Project 2</h3>
               <p>Coming soon...</p>
             </div>
-            <div class="project">
+            <div class="project coming-soon">
               <img
                 src="images/computer.png"
                 class="project-imgs skill"
@@ -165,7 +153,7 @@
               />
               <h3>Project 3</h3>
               <p>Coming soon...</p>
-            </div>
+            </div> -->
           </div>
         </div>
       </section>
