@@ -142,6 +142,17 @@ h1 {
   font-weight: bold;
   color: #343a40;
   font-size: 1.1em;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+
+.skill-name::after {
+  content: " (Learning)";
+  font-size: 0.7em;
+  color: #6c757d;
+  margin-left: 5px;
+  display: inline-block;
 }
 
 /* Progress bar container styles */
@@ -183,6 +194,10 @@ h1 {
   z-index: 1; /* Ensures text is above other elements */
   white-space: nowrap; /* Prevents text wrapping */
   pointer-events: none; /* Ensures text doesn’t block other interactions */
+}
+
+.in-progress {
+  font-size: 0.7rem;
 }
 
 .projects {
