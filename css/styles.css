@@ -12,7 +12,6 @@ html {
 }
 
 body {
-  /* Body styles */
   font-family: "Arial", sans-serif; /* Sets the font family */
   background-color: #f8f9fa; /* Sets the background color */
   color: #343a40; /* Sets the text color */
@@ -40,7 +39,6 @@ nav {
 }
 
 nav a {
-  /* Navigation link styles */
   color: white; /* Sets the text color */
   text-decoration: none; /* Removes underline */
   padding: 1em; /* Sets padding */
@@ -212,11 +210,13 @@ h1 {
     auto-fit,
     minmax(250px, 1fr)
   ); /* Sets grid columns */
-  gap: 20px; /* Sets gap between grid items */
+  gap: 20px;
   align-items: center;
 }
 
 .project {
+  max-width: 300px;
+  justify-self: center;
   padding: 20px;
   background-color: white;
   border-radius: 8px;
@@ -226,7 +226,7 @@ h1 {
 }
 
 .project:hover {
-  transform: translateY(-5px); /* Applies transformation on hover */
+  transform: translateY(-5px);
   box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2);
 }
 
@@ -250,10 +250,10 @@ h1 {
 }
 
 .project-imgs {
-  max-width: 100%; /* Sets the maximum width */
-  height: auto; /* Automatically adjusts height */
-  border-radius: 8px; /* Adds border radius */
-  margin-bottom: 10px; /* Sets bottom margin */
+  max-width: 100%;
+  height: auto;
+  border-radius: 8px;
+  margin-bottom: 10px;
 }
 
 /* Coming soon projects */
@@ -383,8 +383,9 @@ h1 {
 
 /* Footer styles */
 footer {
-  text-align: center; /* Aligns text to the center */
-  padding: 2em 0; /* Sets padding */
-  background-color: #343a40; /* Sets background color */
-  color: white; /* Sets text color */
+  text-align: center;
+  padding: 2em 0;
+  background-color: #343a40;
+  color: white;
+  font-size: 0.8rem;
 }
